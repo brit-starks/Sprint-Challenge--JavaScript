@@ -39,23 +39,23 @@ const dinosaur3 = {
 // Using your dinosaur objects, log answers to these questions:
 
 // How much did tyrannosaurus weigh?
-console.log(dinosaur1.weight);
+// console.log(dinosaur1.weight);
 
 // What was the diet of a velociraptor?
-console.log(dinosaur3.diet);
+// console.log(dinosaur3.diet);
 
 // How long was a stegosaurus?
-console.log(dinosaur2.length);
+// console.log(dinosaur2.length);
 
 // What time period did tyrannosaurus live in?
-console.log(dinosaur1.period);
+// console.log(dinosaur1.period);
 
 dinosaur1.roar = function(){
   console.log(`RAWERSRARARWERSARARARRRR!`);
 }
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
-console.log(dinosaur1.roar());
+// console.log(dinosaur1.roar());
 
 
 // ==== Arrays ====
@@ -78,7 +78,11 @@ const graduates = [{"id":1,"first_name":"Cynde","university":"Missouri Southern 
 Once you have the new array created, sort the universities alphabetically and log the result. */
 const universities = [];
 
-console.log(universities)
+for(let i = 0; i < graduates.length; i++) {
+  universities.push(graduates[i].university);
+}
+
+// console.log(universities);
 
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. 
 
@@ -87,12 +91,25 @@ Name email@example.com
 
 Log the result of your new array. */
 const contactInfo = [];
-console.log(contactInfo);
+
+for(let i = 0; i < graduates.length; i++) {
+  contactInfo.push(graduates[i].first_name, graduates[i].email);
+}
+
+// console.log(contactInfo);
 
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
 const uni = [];
-console.log(uni);
+
+for(let i = 0; i < graduates.length; i++) {
+  if(graduates[i].university === "uni") {
+    uni.push(graduates[i].university);
+  }
+}
+
+// console.log(uni);
+
 
 
 // ==== ADVANCED Array Methods ====
@@ -117,6 +134,8 @@ The zoo wants to display both the scientific name and the animal name in front o
 
 */
 const animalNames = [];
+
+
 console.log(animalNames);
 
 /* Request 2: .map()    
