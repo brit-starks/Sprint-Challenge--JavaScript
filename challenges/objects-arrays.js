@@ -50,9 +50,9 @@ const dinosaur3 = {
 // What time period did tyrannosaurus live in?
 // console.log(dinosaur1.period);
 
-dinosaur1.roar = function(){
-  console.log(`RAWERSRARARWERSARARARRRR!`);
-}
+// dinosaur1.roar = function(){
+//   console.log(`RAWERSRARARWERSARARARRRR!`);
+// }
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
 // console.log(dinosaur1.roar());
@@ -133,11 +133,11 @@ zooAnimals = [{"animal_name":"Jackal, asiatic","population":5,"scientific_name":
 The zoo wants to display both the scientific name and the animal name in front of the habitats.  Return an array with only the animal and scientific names in it.  The individual values in the array should look like this "Name: Jackal, asiatic, Scientific: Canis aureus."
 
 */
-// const animalNames = [];
+const animalNames = [];
 
-// names = zooAnimals.forEach(function(name){
-//   		console.log(name.animal_name, name.scientific_name);
-//   })
+names = zooAnimals.forEach(function(name){
+  		// console.log(name.animal_name, name.scientific_name);
+  })
 
 // console.log(animalNames);
 
@@ -149,9 +149,9 @@ The zoos need a list of all their animal's names (names only, not scientific) co
 
 const lowerCase = [];
 
-// lower = zooAnimals.map((name) => {
-//   console.log(name.animal_name.toLowerCase());
-//   })
+lower = zooAnimals.map((name) => {
+//  console.log(name.animal_name.toLowerCase());
+  })
 
 // console.log(lowerCase); 
 
