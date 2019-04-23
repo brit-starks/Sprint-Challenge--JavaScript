@@ -102,13 +102,14 @@ for(let i = 0; i < graduates.length; i++) {
 
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
-// const uni = [];
+const uni = [];
 
-// for(let i = 0; i < graduates.length; i++) {
-//   if(graduates[i].university === "uni") {
-//     uni.push(graduates[i].university);
-//   }
-// }
+for(let i = 0; i < graduates.length; i++) {
+
+  const uni = graduates.find(graduates("university"))
+   console.log(uni.push(graduates[i].university));
+  };
+
 
 // console.log(uni);
 
