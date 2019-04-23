@@ -47,7 +47,7 @@
 
 // // Explanation: 
 
-// // nestedFunction is able to reach outside of its own scope (into global scope) to find the variable.
+// // nestedFunction is able to reach outside of its own scope to find the variable.
 
 // const external = "I'm outside the function";
 
